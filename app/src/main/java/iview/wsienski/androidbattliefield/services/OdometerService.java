@@ -1,4 +1,4 @@
-package iview.wsienski.androidbattliefield;
+package iview.wsienski.androidbattliefield.services;
 
 import android.Manifest;
 import android.app.Service;
@@ -28,7 +28,7 @@ public class OdometerService extends Service {
     }
 
     public class OdometerBinder extends Binder {
-        OdometerService getOdomete() {
+        public OdometerService getOdomete() {
             return OdometerService.this;
         }
     }

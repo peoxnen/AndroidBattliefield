@@ -1,4 +1,4 @@
-package iview.wsienski.androidbattliefield;
+package iview.wsienski.androidbattliefield.services;
 
 import android.app.IntentService;
 import android.app.Notification;
@@ -8,6 +8,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v4.app.TaskStackBuilder;
+
+import iview.wsienski.androidbattliefield.R;
+import iview.wsienski.androidbattliefield.activites.MainActivity;
 
 /**
  * Created by Witold Sienski on 10.07.2016.

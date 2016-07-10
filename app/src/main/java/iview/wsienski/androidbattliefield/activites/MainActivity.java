@@ -1,4 +1,4 @@
-package iview.wsienski.androidbattliefield;
+package iview.wsienski.androidbattliefield.activites;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -8,17 +8,26 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import iview.wsienski.androidbattliefield.R;
+import iview.wsienski.androidbattliefield.adapters.CardAdapter;
+import iview.wsienski.androidbattliefield.services.MsgService;
+import iview.wsienski.androidbattliefield.services.OdometerService;
 
 public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.textview)
     TextView textView;
+
+    String[] names = {"one", "two", "three"};
+    int[] images =  { R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher};
 
     private OdometerService odometerService;
     private boolean bound = false;
@@ -41,6 +50,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler);
+        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(this, 2);
+        recyclerView.setLayoutManager(layoutManager);
+        CardAdapter cardAdapter = new CardAdapter(names, images);
+        recyclerView.setAdapter(cardAdapter);
     }
 
     @Override
