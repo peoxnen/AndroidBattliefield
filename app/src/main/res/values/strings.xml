@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">AndroidBattliefield</string>
+    <string name="btn_resp">test</string>
+    <string name="hello">Hello World!</string>
+    <string name="start_service">Start Service</string>
 </resources>
