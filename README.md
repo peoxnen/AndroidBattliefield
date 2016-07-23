@@ -1,5 +1,12 @@
 # AndroidBattliefield
 This project was created for educational purposes only! Project shows Android functionalities.
+
+<h1>Status:</h1>
+Always in progress...
+<h1>Category:</h1>
+Fun/Education/Tests
+
+<h1>Functionalities:</h1>
 <ul>
 <li>CardView</li> 
 <li>RecyclerView</li> 
@@ -7,7 +14,3 @@ This project was created for educational purposes only! Project shows Android fu
 <li>Notification</li> 
 <li>LocationManager</li> 
 </ul>
-<h1>Status:</h1>
-Always in progress...
-<h1>Category:</h1>
-Fun/Education/Tests
