@@ -6,7 +6,7 @@ Always in progress...
 <h1>Category:</h1>
 Fun/Education/Tests
 
-<h1>Functionalities:</h1>
+<h1>Android compontent used:</h1>
 <ul>
 <li>CardView</li> 
 <li>RecyclerView</li> 
